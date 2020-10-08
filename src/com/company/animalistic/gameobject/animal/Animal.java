@@ -11,13 +11,13 @@ public abstract class Animal {
 
     }
 
-    //Setters
-    public void setGender(Gender gender) { this.gender = gender; }
-    public void setName(String name) { this.name = name; }
-    public void setHealth(int health) { this.health = health; }
-
     //Getters
     public Gender getGender() { return gender; }
     public String getName() { return name; }
     public int getHealth() { return health; }
+
+    //Setters
+    public void setGender(Gender gender) { this.gender = gender; }
+    public void setName(String name) { this.name = name; }
+    public void setHealth(int health) { this.health = health; }
 }
