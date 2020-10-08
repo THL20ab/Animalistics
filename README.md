@@ -1,0 +1,1 @@
+This is a commandline game project for school in which you can sell and buy animals.
