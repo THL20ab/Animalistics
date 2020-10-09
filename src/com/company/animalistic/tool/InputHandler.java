@@ -13,15 +13,14 @@ public class InputHandler {
 
     public int promptInt(String message, int min, int max) {
         //Set initial value to be out of scope
-        int number = min - 1;
+        int number;
         //Try to capture the Integer
         try {
             number = Integer.parseInt(prompt(message));
+            return number < min || number > max ? promptInt(message, min, max) : number;
         } catch(Exception e) {
-            System.out.println("\nYou have to enter a number between " + min + " and " + max + ".\n");
+            return promptInt(message,min,max);
         }
-        //If value is out of scope prompt again, if not return the value
-        return number < min || number > max ? promptInt(message, min, max) : number;
     }
 
     public int menu(String[] options) {
