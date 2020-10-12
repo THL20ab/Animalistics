@@ -57,8 +57,9 @@ public class Game {
         int choice = Console.displayMenu(new String[] {"New Game", "Help", "Stop Game", "Exit"});
         switch (choice) {
             case 1 -> run();
-            case 2 -> System.out.println("This will be the help section");
-            case 3 -> System.out.println("Sorry to see you go :/ Hope you'll be back soon :)");
+            case 2 -> System.out.println("\nThis will be the help section");
+            case 3 -> System.out.println("\nThis will restart the game");
+            case 4 -> System.out.println("\nSorry to see you go :/ Hope you'll be back soon :)");
         }
     }
 
